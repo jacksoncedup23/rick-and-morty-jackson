@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import EpisodesPage from './Episodes.tsx'
 import './index.css'
 import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import NovaPag from './NovaPag.tsx';
+import CharacsPage from './characs.tsx';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path="" element={<Navigate to="/app" />}/>
-      <Route path="/app" element={<App />}/>
-      <Route path="/nova" element={<NovaPag />} />
+      <Route path="" element={<Navigate to="/episodes" />}/>
+      <Route path="/episodes" element={<EpisodesPage />}/>
+      <Route path="/characters" element={<CharacsPage />} />
     </Route>
   )
 );

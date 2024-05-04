@@ -1,12 +1,13 @@
 export type EpisodeType = {
     id: number;
     name: string;
-    date: Date;
+    air_date: string;
     episode: string;
     characters: string[];
     url: string;
   };
-  
+
+
   export type PageableEpisodeType = {
     info: {
       count: number;
